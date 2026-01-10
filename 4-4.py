@@ -13,10 +13,12 @@ try:
             for i in range(current_line, end_line):
                 print(lines[i].strip())
 
-                current_line = end_line
+            current_line = end_line
 
-                if current_line < total_lines:
-                    input('Naciśnij Enter')
+            if current_line < total_lines:
+                input('Naciśnij Enter')
+                print()
 
 except FileNotFoundError:
     print('Nie znaleziono pliku')                    
+
